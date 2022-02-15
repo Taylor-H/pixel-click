@@ -1,1 +1,1 @@
-# pixelclick
+# pixel-click
