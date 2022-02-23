@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+html {
+  background-color: #222;
+  color: white;
+}
+
+#pixel-click {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.square{
+  width: 5px;
+  height: 5px;
+}
+td {
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+  transition: background-color 0.35s ease;
+}
+
+.red {background-color: red;}
+.salmon {background-color: #fa8072;}
+.orange {background-color: orange;}
+.yellow {background-color: yellow;}
+.green {background-color: green;}
+.mediumseagreen {background-color: #3cb371;}
+.teal {background-color: #008080;}
+.deepskyblue {background-color: #00bfff;}
+.indigo {background-color: indigo;}
+.violet {background-color: violet;}
+.black {background-color: black;}
+.white {background-color: white;}
+.brown {background-color: brown;}
+.tan {background-color: #d2b48c;}
+.apricot {background-color: #fbceb1;}
