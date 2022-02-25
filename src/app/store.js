@@ -16,16 +16,16 @@ export const AVAILABLE_COLORS = [
   "orange",
   "yellow",
   "green",
-  "mediumseagreen",
+  "Medium Green",
   "teal",
-  "deepskyblue",
+  "Sky Blue",
   "indigo",
   "violet",
   "black",
   "white",
   "brown",
   "tan",
-  "peachpuff",
+  "ERASE",
 ]
 
 const initialState = {
@@ -44,7 +44,6 @@ export const pickColor = (color) => ({ type: PICK_COLOR, color })
 export const colorize = (row, column) => ({ type: COLORIZE, row, column })
 
 const reducer = (state=initialState, action) => {
-  console.log(action)
   switch (action.type) {
     case ADD_ROW:
       const newRow = Array(NUM_COLUMNS).fill('')
@@ -65,6 +64,5 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger)
   },
 );
-// const store = createStore(reducer, applyMiddleware(loggerMiddleware))
 
 export default store

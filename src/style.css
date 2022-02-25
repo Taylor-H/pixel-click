@@ -9,15 +9,28 @@ html {
   background-color: #222;
   color: white;
 }
+select {
+  appearance: none;
+  line-height: 1.2rem;
+  border: none;
+}
 
 #pixel-click {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .square{
   width: 5px;
   height: 5px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
 }
 td {
   height: 50px;
@@ -27,13 +40,13 @@ td {
 }
 
 .red {background-color: red;}
-.salmon {background-color: #fa8072;}
+.salmon { background-color: #fa8072;}
 .orange {background-color: orange;}
 .yellow {background-color: yellow;}
 .green {background-color: green;}
-.mediumseagreen {background-color: #3cb371;}
-.teal {background-color: #008080;}
-.deepskyblue {background-color: #00bfff;}
+.mediumseagreen { background-color: #3cb371;}
+.teal { background-color: #008080;}
+.deepskyblue { background-color: #00bfff;}
 .indigo {background-color: indigo;}
 .violet {background-color: violet;}
 .black {background-color: black;}
@@ -41,3 +54,21 @@ td {
 .brown {background-color: brown;}
 .tan {background-color: #d2b48c;}
 .apricot {background-color: #fbceb1;}
+
+
+.salmon option {color: #fa8072; }
+.orangeText {color: orange;}
+.yellowText {color: yellow;}
+.greenText {color: green}
+.mediumseagreenText {color: #3cb371; }
+.tealText {color: #008080; }
+.deepskyblueText {color: #00bfff; }
+.indigoText {color: indigo;}
+.violetText {color: violet;}
+.blackText {color: rgb(255, 255, 255)}
+.whiteText {color: white}
+.brownText {color: brown}
+.tanText {color: #d2b48c; }
+.apricotText {color: #fbceb1; }
+
+

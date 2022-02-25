@@ -8,7 +8,6 @@ export default class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = store.getState()
-
     this.handleAddRowClick = this.handleAddRowClick.bind(this)
     this.handleColorChange = this.handleColorChange.bind(this)
   }
@@ -33,15 +32,20 @@ export default class App extends React.Component {
     return (
       <div id="pixel-click">
         <h1>Pixel Click</h1>
-        <div>
-          <button id='add-row' onClick={this.handleAddRowClick}>Add a row</button>
-          <ColorSelector colors={AVAILABLE_COLORS}
-                         selectedColor={this.state.selectedColor}
-                         onChange={this.handleColorChange}
-          />
+        <div className="container">
+          <button id="add-row" onClick={this.handleAddRowClick}>
+            Add a row
+          </button>
+          <span>Choose a color:
+            <ColorSelector
+              colors={AVAILABLE_COLORS}
+              selectedColor={this.state.selectedColor}
+              onChange={this.handleColorChange}
+            />
+          </span>
         </div>
         <Table grid={this.state.grid} />
       </div>
-    )
+    );
   }
 }
